@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/xhtml" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method = "post" action = "/submit" enctype = "multipart/form-data">
+    <label for = "name"><b>Name</b></label><br>
+    <input type = "text" placeholder = "Enter Name" name = "name" id = "name" required><br>
+    <label for = "mobile"><b>Mobile</b></label><br>
+    <input type = "number" placeholder = "Enter mobile" name = "mobile" id = "mobile" required><br>
+    <label for = "password"><b>Password</b></label><br>
+    <input type = "password" placeholder = "Enter password" name = "password" id = "password" required><br>
+    <label for = "confirm-password"><b>Confirm password</b></label><br>
+    <input type = "password" placeholder = "Confirm password" name = "confirm-password" id = "confirm-password" required><br>
+    <label for = "email"><b>Email</b></label><br>
+    <input type = "text" placeholder = "Enter Email" name = "email" id = "email" required><br>
+    <label for = "picture"> <b>Profile picture</b></label><br>
+    <input type = "file" name = "myfile" id = "picture"><br>
+    <button type = "submit" class = "btn btn-primary btn-block">Register</button>
+</form>
+<!--	<ul th:each = "data : ${errorMessage.getAllErrors()}">-->
+<!--		<li th:text = "${data.getDefaultMessage()}"></li>-->
+<!--	</ul>-->
+
+
+
+
+
+</body>
+</html>
